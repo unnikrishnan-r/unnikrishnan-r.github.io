@@ -1,9 +1,186 @@
-<html>
-    <title>
-        Unni's Portfolio
-    </title>
+<!DOCTYPE html>
+<html lang="en" class="h-100">
 
-    <body>
-        Unni's personal github page
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Me!!</title>
+
+    <!-- Linking the fontawesome CSS for icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+    <!--Linking the Bootstrap Style Sheet-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Linking stylesheet for Common overrides - Footer, Icons etc-->
+    <link rel="stylesheet" href="./assets/css/commonstyles.css">
+
+    <!-- Custom Style Sheet to Override certain styles if screen is atleast 1024px-->
+    <link rel="stylesheet" media="screen and (min-width:1024px)" href="./assets/css/style.css">
+
+    <!--Linking JS scripts for some Bootstrap functions like Toggler to Work-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Javascript for tooltip on icons -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip({
+                placement: 'top'
+            });
+        });
+    </script>
+
+</head>
+
+<body class="d-flex flex-column h-100">
+
+    <main role="main" class="flex-shrink-0">
+        <!--Beginning of Nav Bar-->
+        <!--navbar-expand-md: To expand the navbar for screens about medium
+            navbar-dark , bg-primary: For Colors
+            mb-2: sets bottom margin  -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary mb-2">
+            <!--navbar-brand: For Anchor text-->
+            <span class="navbar-brand">
+                Unnikrishnan Ramachandran
+            </span>
+
+            <!--Defining a toggle button when navbar shrinks for small screens.-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapseButton">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Note that contents that needs to be toggled is wrapped under a class with ID that matches the toggler button-->
+
+            <!-- Each Link in nav bar is an list item in an unordered list class-->
+            <div class="collapse navbar-collapse" id="navbarCollapseButton">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Beginning of Container - divided to Secton Heading, Profile Content and Footer-->
+        <div class="container">
+
+            <!-- Section heading using grid layout-->
+            <div class="section-heading">
+                <div class="row">
+                    <div class="col col-md-lg-12">
+                        <h2> About Me</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Content begins here-->
+            <div class="profile-content">
+
+                <!-- This row has 2 columns, 1 for the profile picture and the 2nd for the desc-->
+                <div class="row">
+                    <div class="col-lg-3">
+                        <img class="img-fluid profile-pic" src="./assets/images/Unni_Passport_Picture.jpg"
+                            alt="Profile Pic">
+                    </div>
+
+                    <div class="col-lg-9">
+                        <p class="profile-desc">
+                            Computers always fascinated me as a kid, and after having spent more than a decade in the
+                            world
+                            of
+                            custom softwares I still feel like a boy standing at the seashore picking pebbles. That
+                            speaks
+                            volumes
+                            about the endless possibility
+                            technology and specifically software opens up for the betterment of daily life for each one
+                            of
+                            us.
+                            That
+                            is what motivated me to set out in exploration to the world of web development!!!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- This row contains rest of the description-->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="profile-desc">
+                            My career so far has revolved around the famous Mainframes! Right out of college, my first
+                            job
+                            was
+                            as a
+                            COBOL/DB2 developer and there has been no looking back since.
+                            In 11 years, I have built numerous Mainframe based applications using COBOL and CICS, with
+                            DB2
+                            or
+                            IMS on
+                            the backend.
+                            When you buy groceries, it is very likely that you are invoking a piece of code that has my
+                            name
+                            on
+                            it,
+                            because my clients were primarily the household names of retail industry.
+                            I have also worked with integration tools like TIBCO, and have my fair share of exposure to
+                            messaging
+                            frameworks, webservices, REST APIs etc.
+                        </p>
+
+                        <p class="profile-desc">
+                            Outside of work, I am a sports enthusiast (just to watch ;)) and a foodie. I love going on
+                            road
+                            trips,
+                            and even after 2 toddlers I have not given that up.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- This row houses the icons to linkedin, email, github profiles-->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a class="icon-link" href="https://www.linkedin.com/in/unnikrishnan-ramachandran/"
+                            target="_blank">
+                            <span class="icon">
+                                <i class="fab fa-linkedin-in" data-toggle="tooltip" data-original-title="Linkedin"></i>
+
+                            </span>
+                        </a>
+
+                        <a class="icon-link" href="mailto:unnipbvr@gmail.com" target="_blank" target="_top">
+
+                            <span class="icon">
+                                <i class="fas fa-envelope" data-toggle="tooltip" data-original-title="Email me"></i>
+                            </span>
+                        </a>
+                        <a class="icon-link" href="https://github.com/unnikrishnan-r" target="_blank">
+                            <span class="icon">
+                                <i class="fab fa-github" data-toggle="tooltip" data-original-title="Github"></i>
+                            </span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- Footer begins here-->
+    <footer class="mt-auto py-3 sticky-footer">
+        <span> Copyright</span>
+    </footer>
+
+</body>
+
 </html>

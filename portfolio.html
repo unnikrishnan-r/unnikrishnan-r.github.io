@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio!!</title>
+
+    <!--Linking the Bootstrap Style Sheet-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Linking stylesheet for Common overrides - Footer, Icons etc-->
+    <link rel="stylesheet" href="./assets/css/commonstyles.css">
+
+    <!-- Custom Style Sheet to Override certain styles if screen is atleast 1024px-->
+    <link rel="stylesheet" media="screen and (min-width:1024px)" href="./assets/css/style.css">
+
+    <!--Linking JS scripts for some Bootstrap functions like Toggler to Work-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="d-flex flex-column h-100">
+
+    <main role="main" class="flex-shrink-0">
+
+        <!--Beginning of Nav Bar-->
+
+        <!--navbar-expand-md: To expand the navbar for screens about medium
+            navbar-dark , bg-primary: For Colors
+            mb-2: sets bottom margin-->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary mb-2">
+            <!--navbar-brand: For Anchor text-->
+            <span class="navbar-brand">
+                Unnikrishnan Ramachandran
+            </span>
+
+            <!--Defining a toggle button when navbar shrinks for small screens.-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapseButton">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Note that contents that needs to be toggled is wrapped under a class with ID that matches the toggler button-->
+
+            <div class="collapse navbar-collapse" id="navbarCollapseButton">
+                <!-- Each Link in nav bar is an list item in an unordered list class-->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Beginning of Container - divided to Secton Heading, Profile Content and Footer-->
+        <div class="container">
+
+            <!-- Section heading using grid layout-->
+            <div class="section-heading">
+                <div class="row">
+                    <div class="col col-md-lg-12">
+                        <h2>My Portfolio</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects will be displayed on the screen using the below grid system-->
+            <div class="project-all">
+
+                <!-- Page has been divided in to 3*3 grid. 3rd column is left blank and each row will have 2 projects-->
+                <div class="row mt-2">
+                    <div class="col-lg-4 mr-3">
+                        <div class="project">
+                            <img class="img-fluid project-pic" src="./assets/images/nature-q-c-640-480-2.jpg" alt="image1">
+                            <p class="projectname">Photo Editor</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mr-3">
+                        <div class="project">
+                            <img class="img-fluid project-pic" src="./assets/images/technics-h-c-640-960-4.jpg" alt="image3">
+                            <p class="projectname">Circuit Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-lg-4 mr-3">
+                        <div class="project">
+                            <img class="img-fluid project-pic" src="./assets/images/technics-q-c-640-480-6.jpg" alt="image5">
+                            <p class="projectname">DJ Mixer</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mr-3">
+                        <div class="project">
+                            <img class="img-fluid project-pic" src="./assets/images/technics-q-c-640-480-2.jpg" alt="image4">
+                            <p class="projectname">RPG Game</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-lg-4 mr-3">
+                        <div class="project">
+                            <img class="img-fluid project-pic" src="./assets/images/sports-q-c-640-480-6.jpg" alt="image2">
+                            <p class="projectname">Fanatasy League</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mr-3">
+                        <div class="project">
+                            <img class="img-fluid project-pic" src="./assets/images/technics-q-c-640-480-8.jpg" alt="image6">
+                            <p class="projectname">Boson Generator</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer begins here-->
+    <footer class="mt-auto py-3 sticky-footer">
+        <span> Copyright</span>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+/* Nav bar customizations for 1024px screens or more*/
+
+/* Starting content of navbar by leaving margins on either side */
+
+.navbar-brand {
+    font-size: 36px;
+    margin-right: 180px;
+    margin-left: calc((100% - 960px)/2);
+    margin-right: 200px;
+}
+
+/* Setting font size */
+
+.nav-link {
+    font-size: 24px;
+}
+
+/* Container width and side margins */
+
+.container {
+    clear: both;
+    overflow: auto;
+    width: 960px;
+    margin-left: calc((100% - 960px)/2);
+    margin-right: calc((100% - 960px)/2);
+}
+
+.profile-content, .form-content {
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 520px;
+}
+
+.project-all {
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 700px;
+}
+
+/* Profile picture and descriptions overrides*/
+
+.profile-pic {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.profile-desc {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+/*Icons for Linkedin, Email, Github*/
+
+.icon {
+    margin-left: 30px;
+}
+
+.project-pic {
+    max-width: 300px;
+    max-height: 225px;
+}
+
+.projectname {
+    width: 300px;
+    padding: 10px;
+}
